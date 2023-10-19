@@ -15,11 +15,10 @@
             <option value="Encargado">Encargado</option>
             <option value="Administrador">Administrador</option>
           </select>
-        </div>
-
-        <div class="alert alert-danger" *ngIf="f['department'].invalid && f['department'].touched">
-          <div *ngIf="f['department'].errors && f['department'].errors['required']">
-            El campo Departamento es obligatorio.
+          <div class="alert alert-danger" *ngIf="f['department'].invalid && f['department'].touched">
+            <div *ngIf="f['department'].errors && f['department'].errors['required']">
+              El campo Departamento es obligatorio.
+            </div>
           </div>
         </div>
 
@@ -27,11 +26,10 @@
           <label>Nombre de empleado</label>
           <input type="text" class="form-control" name="empName" formControlName="empName"
             [class.is-invalid]="f['empName'].invalid && f['empName'].touched">
-        </div>
-
-        <div class="alert alert-danger" *ngIf="f['empName'].invalid && f['empName'].touched">
-          <div *ngIf="f['empName'].errors && f['empName'].errors['required']">
-            Este campo es obligatorio.
+          <div class="alert alert-danger" *ngIf="f['empName'].invalid && f['empName'].touched">
+            <div *ngIf="f['empName'].errors && f['empName'].errors['required']">
+              Este campo es obligatorio.
+            </div>
           </div>
         </div>
 
@@ -39,11 +37,10 @@
           <label>Movil</label>
           <input type="number" class="form-control" name="mobile" formControlName="mobile"
             [class.is-invalid]="f['mobile'].invalid && f['mobile'].touched">
-        </div>
-
-        <div class="alert alert-danger" *ngIf="f['mobile'].invalid && f['mobile'].touched">
-          <div *ngIf="f['mobile'].errors && f['mobile'].errors['required']">
-            Este campo es obligatorio.
+          <div class="alert alert-danger" *ngIf="f['mobile'].invalid && f['mobile'].touched">
+            <div *ngIf="f['mobile'].errors && f['mobile'].errors['required']">
+              Este campo es obligatorio.
+            </div>
           </div>
         </div>
       </div>
@@ -57,11 +54,10 @@
             <option value="Hombre">Hombre</option>
             <option value="Mujer">Mujer</option>
           </select>
-        </div>
-
-        <div class="alert alert-danger" *ngIf="f['gender'].invalid && f['gender'].touched">
-          <div *ngIf="f['gender'].errors && f['gender'].errors['required']">
-            Este campo es obligatorio.
+          <div class="alert alert-danger" *ngIf="f['gender'].invalid && f['gender'].touched">
+            <div *ngIf="f['gender'].errors && f['gender'].errors['required']">
+              Este campo es obligatorio.
+            </div>
           </div>
         </div>
 
@@ -69,11 +65,10 @@
           <label>Fecha de inicio</label>
           <input type="date" class="form-control" name="joinDate" formControlName="joinDate"
             [class.is-invalid]="f['joinDate'].invalid && f['joinDate'].touched">
-        </div>
-
-        <div class="alert alert-danger" *ngIf="f['joinDate'].invalid && f['joinDate'].touched">
-          <div *ngIf="f['joinDate'].errors && f['joinDate'].errors['required']">
-            Este campo es obligatorio.
+          <div class="alert alert-danger" *ngIf="f['joinDate'].invalid && f['joinDate'].touched">
+            <div *ngIf="f['joinDate'].errors && f['joinDate'].errors['required']">
+              Este campo es obligatorio.
+            </div>
           </div>
         </div>
 
@@ -81,11 +76,10 @@
           <label>Email</label>
           <input type="email" class="form-control" name="email" formControlName="email"
             [class.is-invalid]="f['email'].invalid && f['email'].touched">
-        </div>
-
-        <div class="alert alert-danger" *ngIf="f['email'].invalid && f['email'].touched">
-          <div *ngIf="f['email'].errors && f['email'].errors['required']">
-            Este campo es obligatorio.
+          <div class="alert alert-danger" *ngIf="f['email'].invalid && f['email'].touched">
+            <div *ngIf="f['email'].errors && f['email'].errors['required']">
+              Este campo es obligatorio.
+            </div>
           </div>
         </div>
       </div>
@@ -95,11 +89,10 @@
           <label>Sueldo</label>
           <input type="number" class="form-control" name="salary" formControlName="salary"
             [class.is-invalid]="f['salary'].invalid && f['salary'].touched">
-        </div>
-
-        <div class="alert alert-danger" *ngIf="f['salary'].invalid && f['salary'].touched">
-          <div *ngIf="f['salary'].errors && f['salary'].errors['required']">
-            Este campo es obligatorio.
+          <div class="alert alert-danger" *ngIf="f['salary'].invalid && f['salary'].touched">
+            <div *ngIf="f['salary'].errors && f['salary'].errors['required']">
+              Este campo es obligatorio.
+            </div>
           </div>
         </div>
 
@@ -107,11 +100,10 @@
           <label>Contraseña</label>
           <input type="password" class="form-control" name="password" formControlName="password"
             [class.is-invalid]="f['password'].invalid && f['password'].touched">
-        </div>
-
-        <div class="alert alert-danger" *ngIf="f['password'].invalid && f['password'].touched">
-          <div *ngIf="f['password'].errors && f['password'].errors['required']">
-            Este campo es obligatorio.
+          <div class="alert alert-danger" *ngIf="f['password'].invalid && f['password'].touched">
+            <div *ngIf="f['password'].errors && f['password'].errors['required']">
+              Este campo es obligatorio.
+            </div>
           </div>
         </div>
 
@@ -119,11 +111,10 @@
           <label>Repetir contraseña</label>
           <input type="password" class="form-control" name="confirmPass" formControlName="confirmPass"
             [class.is-invalid]="f['confirmPass'].invalid && f['confirmPass'].touched">
-        </div>
-
-        <div class="alert alert-danger" *ngIf="f['confirmPass'].invalid && f['confirmPass'].touched">
-          <div *ngIf="f['confirmPass'].errors && f['confirmPass'].errors['required']">
-            Este campo es obligatorio.
+          <div class="alert alert-danger" *ngIf="f['confirmPass'].invalid && f['confirmPass'].touched">
+            <div *ngIf="f['confirmPass'].errors && f['confirmPass'].errors['required']">
+              Este campo es obligatorio.
+            </div>
           </div>
         </div>
       </div>
@@ -134,11 +125,10 @@
             <input type="checkbox" class="form-check-input" name="empStatus" formControlName="empStatus"
               [class.is-invalid]="f['empStatus'].invalid && f['empStatus'].touched">
             <label>Activo</label>
-          </div>
-
-          <div class="alert alert-danger" *ngIf="f['empStatus'].invalid && f['empStatus'].touched">
-            <div *ngIf="f['empStatus'].errors && f['empStatus'].errors['required']">
-              Este campo es obligatorio.
+            <div class="alert alert-danger" *ngIf="f['empStatus'].invalid && f['empStatus'].touched">
+              <div *ngIf="f['empStatus'].errors && f['empStatus'].errors['required']">
+                Esta casilla es obligatoria.
+              </div>
             </div>
           </div>
         </div>
@@ -146,9 +136,9 @@
 
       <div class="row mt-2">
         <div class="form-group text-center">
-          <button type="submit" class="btn btn-success me-2">Guardar</button>
-          <button type="button" class="btn btn-warning me-2">Borrar</button>
-          <button type="button" class="btn btn-danger">Cancelar</button>
+          <button type="submit" [class.disabled]="employeeForm.invalid" class="btn btn-success me-2">Guardar</button>
+          <button type="button" class="btn btn-warning me-2" (click)="resetBtn()">Borrar</button>
+          <button type="button" class="btn btn-danger" (click)="cancelBtn()">Cancelar</button>
         </div>
       </div>
     </form>
