@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { DataService } from 'src/Database/data.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -10,7 +13,9 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientInMemoryWebApiModule.forRoot(DataService),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

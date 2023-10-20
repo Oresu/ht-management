@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { EmployeeService } from './services/employee.service';
+import { empVM } from 'src/Models/employee';
 
 @Component({
   selector: 'app-root',
@@ -9,11 +11,13 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class AppComponent {
   title = 'ht-management';
   employeeForm: FormGroup = new FormGroup({});
+  employees: empVM[] = [];
 
-  constructor(private _fb: FormBuilder) { }
+  constructor(private _fb: FormBuilder, private _empService: EmployeeService) { }
 
   ngOnInit() {
     this.setEmpForm();
+    this.allEmployees();
   }
 
   setEmpForm() {
@@ -32,19 +36,25 @@ export class AppComponent {
     })
   }
 
-  formSubmit(){
+  formSubmit() {
     console.log(this.employeeForm.value);
   }
 
-  get f(){
+  get f() {
     return this.employeeForm.controls;
   }
 
-  resetBtn(){
+  resetBtn() {
     this.employeeForm.reset();
   }
 
-  cancelBtn(){
+  cancelBtn() {
     this.employeeForm.reset();
+  }
+
+  allEmployees() {
+    this._empService.getAllEmployees().subscribe((response: empVM[]) => {
+      this.employees = response;
+    });
   }
 }
